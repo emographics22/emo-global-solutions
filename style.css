@@ -1,0 +1,51 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#00e889;--deep:#06120d;--white:#f8fffB}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--deep);color:var(--white)}
+a{text-decoration:none;color:inherit}
+.topbar{position:absolute;z-index:5;top:0;left:0;width:100%;display:flex;align-items:center;justify-content:space-between;padding:28px 7%;background:linear-gradient(#06120ddd,transparent)}
+.brand{display:flex;align-items:center;gap:13px}
+.logo{font-size:55px;font-weight:900;letter-spacing:-7px;line-height:.8}
+.logo span{color:var(--green)}
+.brand-name{border-left:2px solid var(--green);padding-left:13px;font-size:20px;font-weight:800;letter-spacing:2px;line-height:1.05}
+.brand-name small{font-size:15px;font-weight:400;letter-spacing:3px}
+.menu{border:0;background:transparent;color:white;font-size:36px;cursor:pointer}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:url("assets/ceo-background.png") center center/cover no-repeat}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,#03130eeF 0%,#03130eD9 42%,#03130e45 72%,#03130e33 100%),linear-gradient(0deg,#03130ed9 0%,transparent 45%,#03130e55 100%)}
+.hero-content{position:relative;z-index:2;width:min(560px,86%);margin-left:7%;padding-top:80px}
+.badge{display:inline-block;border:1px solid var(--green);border-radius:30px;padding:8px 18px;font-size:15px;letter-spacing:1.5px;margin-bottom:25px}
+.welcome{font-size:25px;margin-bottom:3px}
+h1{font-size:clamp(48px,7vw,82px);line-height:.95;letter-spacing:-3px}
+.line{width:130px;height:3px;background:var(--green);margin:28px 0 25px}
+h2{font-size:clamp(34px,5vw,55px);line-height:1.05}
+h2 span{color:var(--green)}
+.visit{font-size:23px;margin:16px 0 24px}
+.btn{display:flex;align-items:center;gap:16px;width:min(410px,100%);min-height:64px;border-radius:38px;padding:12px 24px;margin:12px 0;font-size:19px;font-weight:700;transition:.25s;cursor:pointer}
+.btn:hover{transform:translateY(-3px)}
+.primary{background:linear-gradient(100deg,#00e889,#00bb70);color:#03130e}
+.primary b{margin-left:auto;font-size:28px}
+.whatsapp{border:2px solid var(--green);background:#03130eb8}
+.whatsapp .wa{font-size:28px;color:var(--green)}
+.whatsapp small{display:block;font-weight:400;margin-top:4px;color:#e8fff4}
+.scroll{text-align:center;margin-top:35px;opacity:.9;font-size:25px}
+.scroll small{font-size:14px;letter-spacing:2px}
+.scroll b{color:var(--green);font-size:28px}
+footer{background:#030a07;padding:48px 7% 42px;text-align:center;border-top:1px solid #0b3d2a}
+.footer-logo{display:flex;justify-content:center;align-items:center;gap:18px;font-size:24px;font-weight:800;text-align:left}
+.footer-logo .logo{font-size:60px}
+.motto{margin:25px 0 20px;letter-spacing:3px;font-size:13px}
+footer p:not(.motto){font-size:16px}
+footer i{color:var(--green);font-style:normal}
+.contact{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:28px;font-size:15px}
+.contact a:hover{color:var(--green)}
+@media(max-width:700px){
+  .topbar{padding:22px 5%}.logo{font-size:43px}.brand-name{font-size:14px}.brand-name small{font-size:10px}
+  .menu{font-size:30px}.hero{min-height:100svh;background-position:62% center}
+  .hero-content{width:90%;margin-left:5%;padding-top:105px;align-self:center}
+  .hero-overlay{background:linear-gradient(90deg,#03130ef5 0%,#03130ed8 45%,#03130e72 100%),linear-gradient(0deg,#03130ee8 0%,transparent 65%)}
+  .welcome{font-size:20px}h1{font-size:51px}.line{margin:20px 0}
+  h2{font-size:38px}.visit{font-size:19px}
+  .btn{min-height:60px;font-size:17px}
+  footer{padding:38px 5%}.footer-logo{font-size:20px}.footer-logo .logo{font-size:48px}
+  .motto{font-size:11px;line-height:1.5}.contact{font-size:13px}
+}
