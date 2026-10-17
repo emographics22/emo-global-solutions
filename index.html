@@ -2,53 +2,137 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#06120d">
-  <title>Emo Global Solutions | Website Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Emo Global Solutions is a digital media, technology and creative agency in Malawi. Website development, graphic design, software, live streaming, digital marketing, training and AI solutions.">
+  <meta property="og:title" content="Emo Global Solutions | Digital Media, Technology & Creative Solutions">
+  <meta property="og:description" content="The Home of Design and Digital Innovations. Let's build your next idea.">
+  <title>Emo Global Solutions | The Home of Design and Digital Innovations</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a href="#" class="brand" aria-label="Emo Global Solutions home">
-      <span class="logo">E<span>G</span>S</span>
-      <span class="brand-name">EMO GLOBAL<br><small>SOLUTIONS</small></span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Emo Global Solutions home">
+      <span class="brand-mark">E<span>G</span>S</span>
+      <span class="brand-copy">EMO GLOBAL<small>SOLUTIONS</small></span>
     </a>
-    <button class="menu" aria-label="Open menu">☰</button>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">☰</button>
+    <nav class="nav" id="siteNav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#solutions">Solutions</a><a href="#contact" class="nav-cta">Contact us ↗</a>
+    </nav>
   </header>
 
-  <main class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="badge">CEO • FOUNDER</div>
-      <p class="welcome">Welcome to</p>
-      <h1>Emo Global<br>Solutions</h1>
-      <div class="line"></div>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="pulse"></span> DIGITAL MEDIA · TECHNOLOGY · CREATIVE</p>
+        <p class="intro">Welcome to</p>
+        <h1>Emo Global<br><span>Solutions.</span></h1>
+        <p class="hero-lead">We turn bold ideas into powerful digital experiences.</p>
+        <p class="hero-copy">From standout visual identities to websites, software and live media, we help people and businesses show up, work smarter and grow.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank" rel="noopener">Start a project <span>↗</span></a>
+          <a class="button button-ghost" href="#services">Explore our services <span>↓</span></a>
+        </div>
+        <div class="hero-meta"><span>THE HOME OF DESIGN</span><span class="meta-line"></span><span>AND DIGITAL INNOVATIONS</span></div>
+      </div>
+      <div class="hero-side-note">CREATIVE THINKING. DIGITAL IMPACT.</div>
+    </section>
 
-      <h2>Do you need a<br><span>Website?</span></h2>
-      <p class="visit">Visit us now</p>
+    <section class="trust-strip" aria-label="Our focus">
+      <span>Creative by nature</span><i>✳</i><span>Technology-led</span><i>✳</i><span>Built for growth</span><i>✳</i><span>Made in Malawi</span>
+    </section>
 
-      <a class="btn primary" href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank" rel="noopener">
-        <span>◉</span> Visit Us Now <b>→</b>
-      </a>
+    <section class="section about-section" id="about">
+      <div class="section-label">01 / WHO WE ARE</div>
+      <div class="about-grid">
+        <div><p class="eyebrow accent">ONE PARTNER. MANY POSSIBILITIES.</p><h2>Ideas deserve<br><span class="text-gradient">great execution.</span></h2></div>
+        <div class="about-copy">
+          <p class="large-copy">Emo Global Solutions (EGS) is a full-service digital media, technology and creative agency helping individuals, organisations and businesses bring ideas to life.</p>
+          <p>We combine creativity, practical technology and clear communication to deliver solutions for the way people work, learn, connect and do business.</p>
+          <div class="about-signature"><span class="signature-mark">EGS</span><span><strong>Wisdom Macheso</strong><small>CEO & Founder</small></span></div>
+        </div>
+      </div>
+    </section>
 
-      <a class="btn whatsapp" href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank" rel="noopener">
-        <span class="wa">◉</span>
-        <span><strong>WhatsApp Us</strong><small>+265 990 206 529</small></span>
-      </a>
+    <section class="section services-section" id="services">
+      <div class="section-label">02 / WHAT WE DO</div>
+      <div class="section-heading"><div><p class="eyebrow accent">OUR CAPABILITIES</p><h2>Services that move<br><span class="text-gradient">you forward.</span></h2></div><p class="section-intro">Explore our seven service divisions. Need something specific? Contact us and tell us what you want to achieve.</p></div>
+      <div class="service-groups">
+        <article class="service-group"><div class="group-top"><span class="group-number">01</span><span class="group-icon">✳</span></div><h3>Graphic Design & Branding</h3><p>Make your brand memorable and consistent.</p><ul><li>Logo design & brand identity</li><li>Flyers, posters & brochures</li><li>Business cards & company profiles</li><li>Social media graphics</li><li>Print-ready designs & layouts</li></ul><a href="#contact" class="service-link" data-service="Graphic Design & Branding">Discuss this service ↗</a></article>
+        <article class="service-group"><div class="group-top"><span class="group-number">02</span><span class="group-icon">⌘</span></div><h3>Web & Software Engineering</h3><p>Digital products designed around your goals.</p><ul><li>Business websites & landing pages</li><li>E-commerce & marketplace websites</li><li>Web apps, portals & dashboards</li><li>Mobile app development</li><li>Custom software & database systems</li></ul><a href="#contact" class="service-link" data-service="Web & Software Engineering">Discuss this service ↗</a></article>
+        <article class="service-group"><div class="group-top"><span class="group-number">03</span><span class="group-icon">◉</span></div><h3>Live Broadcast & Media</h3><p>Bring important moments to audiences anywhere.</p><ul><li>Church and event live streaming</li><li>Wedding, engagement & graduation coverage</li><li>Conference and corporate streaming</li><li>Multi-camera production & live switching</li><li>Video production & editing</li></ul><a href="#contact" class="service-link" data-service="Live Broadcast & Media">Discuss this service ↗</a></article>
+        <article class="service-group"><div class="group-top"><span class="group-number">04</span><span class="group-icon">↗</span></div><h3>Digital Marketing</h3><p>Build visibility, engagement and trust online.</p><ul><li>Social media management</li><li>Digital campaign creative</li><li>Content planning & promotion</li><li>Brand communication strategy</li></ul><a href="#contact" class="service-link" data-service="Digital Marketing">Discuss this service ↗</a></article>
+        <article class="service-group"><div class="group-top"><span class="group-number">05</span><span class="group-icon">▣</span></div><h3>ICT & Technical Support</h3><p>Practical support for your everyday technology.</p><ul><li>Computer setup & software installation</li><li>ICT troubleshooting and maintenance</li><li>Digital productivity support</li><li>Technical consultation</li></ul><a href="#contact" class="service-link" data-service="ICT & Technical Support">Discuss this service ↗</a></article>
+        <article class="service-group"><div class="group-top"><span class="group-number">06</span><span class="group-icon">▤</span></div><h3>Technical Education</h3><p>Build digital skills with practical learning.</p><ul><li>Digital literacy & computer skills</li><li>ICT and productivity training</li><li>Web development learning support</li><li>Online learning platform development</li></ul><a href="#contact" class="service-link" data-service="Technical Education">Discuss this service ↗</a></article>
+        <article class="service-group"><div class="group-top"><span class="group-number">07</span><span class="group-icon">✧</span></div><h3>AI & Digital Business Solutions</h3><p>Explore smarter ways to serve your customers.</p><ul><li>AI-assisted business workflows</li><li>Business portals & customer chatbots</li><li>CRM and analytics concepts</li><li>Digital transformation consulting</li></ul><a href="#contact" class="service-link" data-service="AI & Digital Business Solutions">Discuss this service ↗</a></article>
+      </div>
+      <p class="services-note">Service scope, timelines and costs are confirmed after discussing your project requirements.</p>
+    </section>
 
-      <div class="scroll">◯<br><small>Scroll Down</small><br><b>⌄</b></div>
-    </div>
+    <section class="solutions-section" id="solutions">
+      <div class="section solution-grid">
+        <div><div class="section-label">03 / HOW WE HELP</div><p class="eyebrow accent">FROM FIRST IDEA TO FINAL DELIVERY</p><h2>Made around<br><span class="text-gradient">your ambition.</span></h2><p class="section-intro">Whether you are starting small or ready to scale, we work with you to understand the brief and recommend a practical solution.</p><a class="button button-primary" href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank" rel="noopener">Let's talk on WhatsApp ↗</a></div>
+        <div class="process-list">
+          <div class="process-item"><span>01</span><div><h3>Discover</h3><p>We listen to your needs, audience and goals.</p></div></div>
+          <div class="process-item"><span>02</span><div><h3>Plan</h3><p>We agree on scope, deliverables and next steps.</p></div></div>
+          <div class="process-item"><span>03</span><div><h3>Create</h3><p>We build, design or produce with care.</p></div></div>
+          <div class="process-item"><span>04</span><div><h3>Deliver</h3><p>We share the work and discuss support or updates.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="section contact-grid">
+        <div><div class="section-label">04 / LET'S CONNECT</div><p class="eyebrow accent">HAVE A PROJECT IN MIND?</p><h2>Let's make<br><span class="text-gradient">it happen.</span></h2><p class="section-intro">Tell us what you need. Your message will open in WhatsApp so you can review and send it directly.</p>
+          <div class="contact-details"><a href="tel:+265990206529"><span>PHONE / WHATSAPP</span>+265 990 206 529</a><a href="mailto:emoglobalsolutions@gmail.com"><span>EMAIL</span>emoglobalsolutions@gmail.com</a><div><span>LOCATION</span>Kasungu, Malawi</div></div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Enter your name" required>
+          <label for="service">What service are you interested in?</label><select id="service" name="service" required><option value="">Choose a service</option><option>Graphic Design & Branding</option><option>Web & Software Engineering</option><option>Live Broadcast & Media</option><option>Digital Marketing</option><option>ICT & Technical Support</option><option>Technical Education</option><option>AI & Digital Business Solutions</option><option>Other / Not sure yet</option></select>
+          <label for="message">Project details</label><textarea id="message" name="message" rows="4" placeholder="Briefly describe what you need..." required></textarea>
+          <button class="button button-primary form-button" type="submit">Continue to WhatsApp <span>↗</span></button>
+          <p class="form-note">WhatsApp opens with your details filled in. Nothing is sent until you press Send in WhatsApp.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer-logo"><span class="logo">E<span>G</span>S</span><span>Emo Global<br>Solutions</span></div>
-    <p class="motto">THE HOME OF DESIGN AND DIGITAL INNOVATIONS</p>
-    <p>Digital Media <i>•</i> Technology <i>•</i> Creative Solutions</p>
-    <div class="contact">
-      <a href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank">☎ +265 990 206 529</a>
-      <span>|</span>
-      <a href="mailto:emoglobalsolutions@gmail.com">✉ emoglobalsolutions@gmail.com</a>
-    </div>
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">E<span>G</span>S</span><span class="brand-copy">EMO GLOBAL<small>SOLUTIONS</small></span></a>
+    <p class="footer-motto">THE HOME OF DESIGN AND DIGITAL INNOVATIONS</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> Emo Global Solutions. All rights reserved.</span><div><a href="#home">Back to top ↑</a><a href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank" rel="noopener">WhatsApp ↗</a></div></div>
   </footer>
+  <a class="floating-wa" href="https://wa.me/265990206529?text=Hello%20Emo%20Global%20Solutions%20I%20need%20a%20Website." target="_blank" rel="noopener" aria-label="Chat with Emo Global Solutions on WhatsApp">✆</a>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const siteNav = document.getElementById('siteNav');
+    menuToggle.addEventListener('click', () => {
+      const open = siteNav.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '×' : '☰';
+    });
+    siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      siteNav.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+    document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => {
+      const select = document.getElementById('service');
+      select.value = link.dataset.service;
+    }));
+    document.getElementById('contactForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value.trim();
+      const text = `Hello Emo Global Solutions. My name is ${name}. I am interested in: ${service}. Project details: ${message}`;
+      window.open('https://wa.me/265990206529?text=' + encodeURIComponent(text), '_blank', 'noopener');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
